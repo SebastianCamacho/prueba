@@ -1,0 +1,49 @@
+{
+  "PersonalInformation": [
+    {
+      "id": "1",
+      "tipoDocumento": "cc",
+      "documento": "123456789",
+      "nombre1": "juan",
+      "nombre2": "segundo",
+      "apellido1": "Muñoz",
+      "apellido2": "perez",
+      "fechaNacimiento": "2000-11-14",
+      "sexo": "M"
+    },
+    {
+      "id": "61e8",
+      "tipoDocumento": "cc",
+      "nombre1": "juan",
+      "documento": "1003376130",
+      "nombre2": "sebastian",
+      "apellido1": "camacho",
+      "apellido2": "Muñoz",
+      "fechaNacimiento": "2000-11-14",
+      "sexo": "M"
+    },
+    {
+      "id": "87d6",
+      "tipoDocumento": "cc",
+      "documento": "1003316480",
+      "nombre1": "dayleth",
+      "apellido1": "Florez",
+      "fechaNacimiento": "2001-05-07",
+      "nombre2": "none",
+      "apellido2": "Muñoz",
+      "sexo": "F"
+    },
+    
+    {
+      "id": "3138",
+      "tipoDocumento": "cc",
+      "documento": "1003376130",
+      "nombre1": "juan",
+      "nombre2": "sebastian",
+      "apellido1": "camacho",
+      "apellido2": "Muñoz",
+      "fechaNacimiento": "2000-12-12",
+      "sexo": "M"
+    }
+  ]
+}

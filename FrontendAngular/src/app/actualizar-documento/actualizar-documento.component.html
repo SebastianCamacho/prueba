@@ -17,30 +17,42 @@
 <div class="container1">
 
   <div class="container_form">
+    <div class="contenedor_text ">
 
-    <div class="contenedor_text">
-      <div class="mb-2">
-        <label for="exampleFormControlInput1" class="form-label">Id</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0001" disabled="true">
+      <div class="row ">
+        <div class="mb-0 col-8">
+          <label for="exampleFormControlInput1" class="form-label">id</label>
+          <input type="text" class="form-control" id="campo_docuento" [(ngModel)]="persona.id">
+        </div>
+        <div class="col-1 mt-4">
+          <button (click)="onBuscarPersona_Id(persona.id)" type="button" class="btn">Buscar</button>
+        </div>
       </div>
-      <div class="mb-2">
+
+      <div class="mb-1">
         <label for="exampleFormControlInput1" class="form-label">Tipo de Documento</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="C.C | T.I | Pasaporte | P.P">
+        <input type="text" class="form-control" id="campo_tipoDocumento" [(ngModel)]="persona.tipoDocumento">
       </div>
+      <div class="mb-1">
+        <label for="exampleFormControlInput1" class="form-label">Numer de Documento</label>
+        <input type="text" class="form-control" id="campo_Documento" [(ngModel)]="persona.documento">
+      </div>
+
+
     </div>
 
     <div class="contenedor_text">
       <div class="mb-2">
         <label for="exampleFormControlInput1" class="form-label">Nombre1</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pepito">
+        <input type="text" class="form-control" id="campo_Nombre1" [(ngModel)]="persona.nombre1">
       </div>
       <div class="mb-2">
         <label for="exampleFormControlInput1" class="form-label">Nombre2</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Segundo">
+        <input type="text" class="form-control" id="campo_Nombre2" [(ngModel)]="persona.nombre2">
       </div>
       <div class="mb-2">
         <label for="exampleFormControlInput1" class="form-label">Apellido1</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Perez">
+        <input type="text" class="form-control" id="campo_Apellido1" [(ngModel)]="persona.apellido1">
       </div>
     </div>
 
@@ -48,18 +60,19 @@
     <div class="contenedor_text">
       <div class="mb-2">
         <label for="exampleFormControlInput1" class="form-label">Apellido2</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Alvarez">
+        <input type="text" class="form-control" id="campo_Apellido2" [(ngModel)]="persona.apellido2">
       </div>
       <div class="mb-2">
-        <label for="exampleFormControlInput1" class="form-label">Fecha de ncimiento</label>
-        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="31/12/2999">
+        <label for="exampleFormControlInput1" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="campo_Fecha" [(ngModel)]="persona.fechaNacimiento">
       </div>
       <div class="mb-2">
         <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="M">
+        <input type="text" class="form-control" id="campo_Sexo" [(ngModel)]="persona.sexo" placeholder=>
       </div>
     </div>
 
     <button (click)="onActualizarPersona(persona)" class="btn">Actualizar</button>
+
   </div>
 </div>

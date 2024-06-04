@@ -36,6 +36,13 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environments.ts",
+                  "with": "src/environments/environments.prod.ts"
+                }
+              ],
+
               "budgets": [
                 {
                   "type": "initial",
@@ -59,6 +66,8 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
