@@ -1,1 +1,36 @@
-<div class="container1"></div>
+<div class="container1">
+  <div class="row justify-content-center h-75 g-0">
+    <div class="col-8">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tipo de Documento</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Primer Nombre</th>
+            <th scope="col">Segundo Nombre</th>
+            <th scope="col">Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">fecha de Nacimiento</th>
+            <th scope="col">Sexo</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (person of listPerson; track $index) {
+          <tr>
+            <th scope="row">{{ $index + 1 }}</th>
+            <td scope="col">{{ person.tipoDocumento }}</td>
+            <td scope="col">{{ person.documento }}</td>
+            <td scope="col">{{ person.nombre1 }}</td>
+            <td scope="col">{{ person.nombre2 }}</td>
+            <td scope="col">{{ person.apellido1 }}</td>
+            <td scope="col">{{ person.apellido2 }}</td>
+            <td scope="col">{{ getFechaNacimiento(person.fechaNacimiento)}}</td>
+            <td scope="col">{{ person.sexo }}</td>
+          </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
