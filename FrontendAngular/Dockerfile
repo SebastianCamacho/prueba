@@ -14,12 +14,8 @@ FROM nginx:1.23.3 AS nginx
 EXPOSE 80
 # Copia el directorio de la aplicación Angular compilada a la ubicación correcta
 COPY --from=build /app/dist/frontend-angular/browser /usr/share/nginx/html
-
-# Configuracion de la variable de entorno
-
-# ENV API_URL_NET http://localhost:304
-# ENV API_URL_PYTHON htttp://localhost:805
+COPY ./assets/env.sample.js /usr/share/nginx/html/assets/env.sample.js
 
 # Inicia Nginx con la configuración por defecto
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/bin/sh", "-c", "envsubst < /usr/share/nginx/html/assets/env.sample.js > /usr/share/nginx/html/assets/env.js && exec nginx -g 'daemon off;'"]
 

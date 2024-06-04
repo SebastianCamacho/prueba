@@ -12,7 +12,7 @@ export class PersonaService {
 
   constructor(private http:HttpClient) { }
 
-  url = `${environment.URL_NET}/api/personalinformation`;
+  url = `${environment.backendBaseUrl}/api/personalinformation`;
   
   urlpython= `${environment.URL_PHYTON}/documents`;
 
